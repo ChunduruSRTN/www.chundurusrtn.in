@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun | Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tharun</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <h3>Hello, I am</h3>
+                <h1>Chunduru Siva Ratna Tharun</h1>
+                <h2>And I am a <span class="text"></span></h2>
+                <p>Passionate web designer and programmer with expertise in HTML, CSS, JavaScript, and Python. 
+                    I love crafting elegant and efficient websites that enhance user experiences. 
+                    Always eager to learn and develop new skills.</p>
+            </div>
+            <div class="home-image">
+                <img src="PROFILE.jpg" alt="Profile Image">
+            </div>
+            <a href="#about" class="btn-box">More About Me</a>
+            <script>
+            document.getElementById("moreAboutMe").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default jump
+                let aboutSection = document.getElementById("about");
+                // Add fade-in effect
+                aboutSection.classList.add("fade-in");
+                // Scroll smoothly to the About Me section
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+            });
+        </script>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm <b>Chunduru Siva Ratna Tharun</b>, a passionate web designer and programmer with expertise in 
+                        HTML, CSS, JavaScript, Python, and more. I enjoy creating visually appealing, user-friendly websites and applications. 
+                        I am always eager to learn new technologies and improve my skills.</p>
+                    <p>When I'm not coding, I love reading books, working on short projects, and enhancing my knowledge.</p>
+                </div>
+                <div class="about-image">
+                    <img src="PROFILE.jpg" alt="Profile Image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="skills-main-container">
+            <h1>My Skills</h1>
+            <h2 font-size="20px" font-color="white">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill"><img src="html5.webp" alt="HTML" style="width:80%"></div>
+                <div class="skill"><img src="css.webp" alt="CSS" style="width:80%"></div>
+                <div class="skill"><img src="js.png" alt="JavaScript" style="width:80%"></div>
+                <div class="skill"><img src="python.png" alt="Python" style="width:80%"></div>
+                <div class="skill"><img src="java.png" alt="Java" style="width:80%"></div>
+                <div class="skill"><img src="sql.png" alt="SQL" style="width:80%"></div>
+            </div>
+    
+            <div class="skills-side-container">
+                <div class="extra-skills-container">
+                    <h2>Extra Skills</h2>
+                    <ul>
+                        <li>Communication</li>
+                        <li>Good Speaking</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+    
+                <div class="hobbies-container">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Reading Books</li>
+                        <li>Improving Skills in Spare Time</li>
+                        <li>Making Short Projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Circular Progress Bars -->
+        <div class="skills-percentage-container">
+            <div class="circle-skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>90%</p>
+                    </div>
+                </div>
+                <h3>HTML</h3>
+            </div>
+            <div class="circle-skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>85%</p>
+                    </div>
+                </div>
+                <h3>CSS</h3>
+            </div>
+            <div class="circle-skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>75%</p>
+                    </div>
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="circle-skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>80%</p>
+                    </div>
+                </div>
+                <h3>Python</h3>
+            </div>
+            <div class="circle-skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>70%</p>
+                    </div>
+                </div>
+                <h3>Java</h3>
+            </div>
+            <div class="circle-skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>65%</p>
+                    </div>
+                </div>
+                <h3>SQL</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="projects-container">
+            <h1>My Projects</h1>
+    
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-image">
+                        <img src="OOCD.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-details">
+                        <h3>1. Optimizing Ovarian Cancer Diagnosis Using Machine Learning</h3>
+                        <p>A machine learning-based medical project designed to enhance early detection of ovarian cancer.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image">
+                        <img src="PROFILE.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-details">
+                        <h3>2. Personal Portfolio Website</h3>
+                        <p>A professional portfolio website to showcase my skills and projects.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image">
+                        <img src="MSA.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-details">
+                        <h3>3. Medicine Shopping App (Amazon/Netmeds Alternative)</h3>
+                        <p>An e-commerce platform for medicines, integrating online prescriptions and AI recommendations.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+    
+                <div class="project">
+                    <div class="project-image">
+                        <img src="IODS.jpg" alt="Project 4">
+                    </div>
+                    <div class="project-details">
+                        <h3>4. AI-Driven Image Analysis for Smarter Business Decisions (Image Comparison System - ICS)</h3>
+                        <p>An AI-powered tool for product image comparison to optimize business decisions.</p>
+                        <a href="#" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "note-container">
+            <h1> Description </h1>
+            <p>Optimizing Ovarian Cancer Diagnosis Using Machine Learning – A predictive model using ML algorithms to enhance early ovarian cancer detection and assist healthcare professionals.</p>
+            <p>Medicine Shopping App – An e-commerce platform for medicines with AI recommendations, online prescriptions, secure transactions, and home delivery.</p>
+            <p>Personal Portfolio Website – A responsive and interactive portfolio showcasing my skills, projects, and contact details with smooth UI/UX.</p>
+            <p>Web-Based Project Management Tool – A task and team management system enabling efficient workflow tracking with real-time progress visualization.</p>
+        </div>
+    </section>
+    
+    
+    <section id="experience">
+        <div class="experience-container">
+            <h2 class="experience-title">My Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-item">
+                    <div class="experience-box"><span>Certificates</span></div>
+                    <div class="hexagon-group">
+                        <div class="hexagon">NPTEL-IIOT 4.0</div>
+                        <div class="hexagon">Cuvette-SQL</div>
+                        <div class="hexagon">GOOGLE-Ads</div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-box"><span>Internships</span></div>
+                    <div class="hexagon-group">
+                        <div class="hexagon">Internpe-Python Coding</div>
+                        <div class="hexagon">AICTE-Alteryx</div>
+                        <div class="hexagon">360DG-Internship</div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-box"><span>Projects</span></div>
+                    <div class="hexagon-group">
+                        <div class="hexagon">Optimizing Ovarian Cancer Diagnosis</div>
+                        <div class="hexagon">Medicine Shopping App</div>
+                        <div class="hexagon">AI-Driven Image Analysis for Smarter Business Decisions</div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-box"><span>Freelances</span></div>
+                    <div class="hexagon-group">
+                        <div class="hexagon">Nill</div>
+                        <div class="hexagon">Now</div>
+                        <div class="hexagon">Upcomming</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <div class="contact-container">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out for any project collaborations or inquiries!</p>
+    
+            <div class="contact-content">
+                <!-- Left: Contact Details -->
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <a href="tel:+919876543210"><i class="fas fa-phone-alt"></i></a>
+                        <p><a href="tel:+919876543210">+91 90148 03086</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:contact@tharun.com"><i class="fas fa-envelope"></i></a>
+                        <p><a href="mailto:contact@tharun.com">chundurusrtn@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/chunduru-siva-ratna-tharun-684185263/?trk=opento_sprofile_topcard" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <p><a href="https://www.linkedin.com/in/chunduru-siva-ratna-tharun-684185263/?trk=opento_sprofile_topcard" target="_blank">LinkedIn</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://github.com/ChunduruSRTN" target="_blank"><i class="fab fa-github"></i></a>
+                        <p><a href="https://github.com/ChunduruSRTN" target="_blank">GitHub</a></p>
+                    </div>
+                </div>
+    
+                <!-- Right: Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="main.js"></script>       
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <p>Chunduru Siva Ratna Tharun.</p>
+        </div>
+    </div>
+</footer>
+
+</html>
